@@ -1,0 +1,27 @@
+ion-toolbar {
+  --min-height: 6vh;
+  --background: #2200ff;
+  --color: white;
+  div {
+    padding: 6px;
+    font-size: 0.9rem;
+  }
+}
+
+ion-content {
+  div{
+    text-align: center;
+    color:white;
+    ion-title{
+      font-size:48px;
+      font-weight:700;
+    }
+  }
+
+  --background: linear-gradient(
+    #2200ff 0%,
+    #2200ff 28%,
+    #82f7ff 28%,
+    #82f7ff 100%
+  );
+}
