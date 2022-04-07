@@ -5,12 +5,16 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'tabs',
+    redirectTo: 'splash-screen',
     pathMatch: 'full'
   },
   {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: 'splash-screen',
+    loadChildren: () => import('./splash-screen/splash-screen.module').then( m => m.SplashScreenPageModule)
   },
 ];
 

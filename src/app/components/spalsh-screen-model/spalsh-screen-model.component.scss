@@ -1,0 +1,20 @@
+ion-content {
+  --background: white;
+  --padding-top:24px;
+  --padding-start:20px;
+  div {
+    color: black;
+    padding: 20px;
+  }
+
+  ion-button {
+    --color: var(--ion-color-secondary);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size:20px;
+    ion-icon{
+      padding:4px;
+    }
+  }
+}

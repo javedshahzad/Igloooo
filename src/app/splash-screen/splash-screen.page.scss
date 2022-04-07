@@ -1,0 +1,13 @@
+ion-content {
+  div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    h1{
+      font-size:52px ;
+      font-weight: 700;
+      color: var(--ion-color-secondary);
+    }
+  }
+}
