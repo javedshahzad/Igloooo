@@ -9,12 +9,13 @@ ion-content {
 
   ion-button {
     --color: var(--ion-color-secondary);
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: .3rem;
+    margin-bottom: .3px;
     font-weight: 600;
-    font-size:20px;
+    font-size:1rem;
     ion-icon{
-      padding:4px;
+      padding:.2rem;
     }
+
   }
 }

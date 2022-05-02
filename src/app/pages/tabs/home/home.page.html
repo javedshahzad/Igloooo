@@ -4,18 +4,25 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <div class="location-bar">
-        <ion-text> Guwahati </ion-text>
-        <ion-icon name="chevron-down-outline" color="light"></ion-icon>
-      </div>
+      <ion-button routerLink="">
+        <ion-text > Guwahati </ion-text>
+        <ion-icon
+          slot="end"
+          name="chevron-down-outline"
+          color="light"
+        ></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="ion-no-border">
-  <div class="igloo-main">
-    <ion-title>igloooo</ion-title>
-    <ion-text>Best deals are here..</ion-text>
+  <ion-text class="heading">
+    <h1>igloooo</h1>
+    <h6>Best deals are here..</h6>
+  </ion-text>
+  <div>
+    <ion-searchbar color="light"> </ion-searchbar>
   </div>
-  <ion-searchbar></ion-searchbar>
+  <app-available-cities></app-available-cities>
 </ion-content>

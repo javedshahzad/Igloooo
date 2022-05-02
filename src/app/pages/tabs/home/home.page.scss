@@ -1,31 +1,16 @@
-ion-toolbar {
-  --min-height: 6vh;
-  --background: #1f00df;
-  --color: white;
-  div.location-bar {
-    padding: 6px;
-    font-size: 0.9rem;
-  }
-}
-
 ion-content {
-  div.igloo-main {
+  .heading {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    ion-title {
-      padding: 1rem;
-      font-weight: bold;
-      font-size: 3em;
-    }
+    justify-content: center;
   }
-
-  --background: linear-gradient(
-    #1f00df 0%,
-    #1f00df 28%,
-    #70f5ff 28%,
-    #70f5ff 100%
-  );
+  h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--ion-color-secondary);
+  }
+  h6 {
+    margin-top: -2px;
+  }
 }

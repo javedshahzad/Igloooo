@@ -1,22 +1,22 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
-      <ion-icon name="home-outline"></ion-icon>
+    <ion-tab-button tab="home" #tab1>
+      <ion-icon [name]="tab1.selected ?'home' :'home-outline'"></ion-icon>
       <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="search">
-      <ion-icon name="search-outline"></ion-icon>
+    <ion-tab-button tab="search" #tab2>
+      <ion-icon [name]="tab2.selected ?'search' :'search-outline'"></ion-icon>
       <ion-label>Search</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="saved">
-      <ion-icon name="heart-outline"></ion-icon>
+    <ion-tab-button tab="saved" #tab3>
+      <ion-icon [name]="tab3.selected ?'heart' :'heart-outline'"></ion-icon>
       <ion-label>Saved</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="account">
-      <ion-icon name="person-outline"></ion-icon>
+    <ion-tab-button tab="account" #tab4>
+      <ion-icon [name]="tab4.selected ?'person' :'person-outline'"></ion-icon>
       <ion-label>Account</ion-label>
     </ion-tab-button>
   </ion-tab-bar>

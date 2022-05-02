@@ -19,7 +19,8 @@ export class SplashScreenPage implements OnInit {
       component:SpalshScreenModelComponent,
       cssClass: 'modal-css',
       breakpoints:[0,0.3,0.55,0.8],
-      initialBreakpoint:0.55
+      initialBreakpoint:0.55,
+      handle:false,
     })
     return await modal.present();
   }

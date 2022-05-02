@@ -5,14 +5,80 @@
     <ion-menu contentId="main">
       <ion-header>
         <ion-toolbar>
-          <ion-title>Menu</ion-title>
+          <ion-item lines="none" color="secondary">
+            <ion-avatar slot="start">
+              <img src="/assets/user-avatar/dummyUser.jpg" />
+            </ion-avatar>
+            <ion-label>Hello {{ userName[1] }} </ion-label>
+          </ion-item>
         </ion-toolbar>
       </ion-header>
 
       <ion-content>
-        hello
-      </ion-content>
+        <ion-list>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="log-in" color="secondary"></ion-icon>
+              <ion-label color="dark">Login</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="person-add" color="secondary"></ion-icon>
+              <ion-label color="dark">Register</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item>
+            <ion-button fill="clear">
+              <ion-icon name="logo-whatsapp" color="success"></ion-icon>
+              <ion-label color="dark">ContactUs</ion-label>
+            </ion-button>
+          </ion-item>
+        </ion-list>
+        <!--  -->
+        <ion-list>
+          <ion-item>
+            <ion-button fill="clear">
+              <ion-icon name="home" color="secondary"></ion-icon>
+              <ion-label color="dark">Home</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="heart" color="secondary"></ion-icon>
+              <ion-label color="dark">Shortlist</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="person" color="secondary"></ion-icon>
+              <ion-label color="dark">Profile</ion-label>
+            </ion-button>
+          </ion-item>
+        </ion-list>
 
+        <!--  -->
+        <ion-list>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="information-circle" color="secondary"></ion-icon>
+              <ion-label color="dark">About US</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="help-circle" color="secondary"></ion-icon>
+              <ion-label color="dark">FAQ</ion-label>
+            </ion-button>
+          </ion-item>
+          <ion-item lines="none">
+            <ion-button fill="clear">
+              <ion-icon name="key" color="secondary"></ion-icon>
+              <ion-label color="dark">PRIVACY POLICY</ion-label>
+            </ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-content>
     </ion-menu>
     <ion-router-outlet id="main"></ion-router-outlet>
   </ion-split-pane>
